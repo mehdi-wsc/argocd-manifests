@@ -22,5 +22,5 @@ spec:
       - name: app
         image: public.ecr.aws/nginx/nginx:latest # v1, v2, blue, green
         ports:
-        - containerPort: 8080
+        - containerPort: 80
 
