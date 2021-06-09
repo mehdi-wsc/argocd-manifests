@@ -6,7 +6,7 @@ metadata:
     section: intro
 spec:
   # modify replicas according to your case
-  replicas: 4
+  replicas: 1
   # strategy -- 
   selector:
     matchLabels: #<- Must match labels of Pod
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: bitnami/nginx:latest # v1, v2, blue, green
+        image: alpine:latest # v1, v2, blue, green
         ports:
         - containerPort: 80
         securityContext:
